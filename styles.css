@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.service {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonials {
+  background: #eee;
+  padding: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .contact-form {
+    flex-direction: column;
+  }
+}
+
+/* Add animations for elements on scroll */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
